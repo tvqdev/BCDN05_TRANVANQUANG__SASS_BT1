@@ -1,0 +1,26 @@
+.carousel {
+     background: darkcyan;
+     position: relative;
+     .carousel-banner {
+          position: absolute;
+          bottom: 0;
+     }
+     .carousel-title {
+          h4 {
+               color: $cl-pink;
+               font-size: 15px;
+               margin-top: -50px;
+          }
+          h1 {
+               font-size: 57px;
+               color: $cl-while;
+          }
+     }
+     .carousel-img {
+          img {
+               max-width:100%;
+               max-height:100%;
+          }
+     }
+
+}
