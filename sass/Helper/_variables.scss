@@ -1,46 +1,29 @@
-$cl-black: #000000;
-$cl-pink : #b61984;
-$cl-gray : #dcd1f3;
-$cl-black1 : #191919;
-$cl-while : #fff;
+//Color
+$color-purple: #b61984;
+$color-white: #ffffff;
+$color-white-2: rgba(255, 255, 255, 1);
+$color-dark-1: #191919;
+$color-dark-2: #181818;
+$color-gray: #dcd1f3;
 
 
+//Font-size
+$fs-heading-1:1.65rem;
+$fs-heading-2:5.7rem;
+$fs-heading-3:1.125rem;
+$fs-heading-4:23.25rem;
+$fs-heading-5:1.35rem;
+$fs-menu:13px;
+$fs-text-1:1.5rem;
+$fs-button-1:0.9rem;
 
-//font size
-$fs-1: 14px;
-$fs-2: 1.1rem;
-$fs-3: 1.8rem;
-$fs-4: 70px;
-$fs-5: 1.6rem;
-$fs-6: 2.25rem;
-$fs-7: 20px;
-$fs-8: 44px;
+//Font-weight
+$fw1: 400;
+$fw2: 500;
+$fw3: 600;
+$fw4: 700;
 
-//font weight
-$fw-1: 400;
-$fw-2: 600;
-$fw-3: 700;
+//Font-family
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary:'Roboto', sans-serif;
 
-//letter spacing
-$ls-1: 0.015rem;
-$ls-2: 0.03rem;
-
-//Padding
-$pd-1: 25px;
-$pd-2: 225px;
-$pd-3: 13px;
-$pd-4: 44px;
-$pd-5: 100px;
-$pd-6: 8px;
-$pd-7: 60px;
-$pd-8: 150px;
-
-//Margin
-$mg-1: 30px;
-$mg-2: 25px;
-$mg-3: 70px;
-$mg-4: 60px;
-
-//border
-$bd-1: 2px;
-$bd-2: 8px;

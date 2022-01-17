@@ -1,0 +1,54 @@
+// BS4
+.dropdown-toggle::after{
+    content: unset;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-collapse{
+    justify-content:flex-end;
+}
+.col-3,.col-5{
+    padding: 0 20px;
+}
+.mb-6{
+    margin-bottom: 40px;
+}
+.row{
+margin: 0;
+}
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .container {
+        max-width: 1260px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

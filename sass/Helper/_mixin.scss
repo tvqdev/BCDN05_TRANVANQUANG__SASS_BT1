@@ -1,0 +1,39 @@
+@mixin styleText($ff,$color,$fs,$fw) {
+    font-family: $ff;
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleBtn($bg, $pd-y, $pd-x, $bd, $br) {
+    background: $bg;
+    padding: $pd-y $pd-x;
+    border: $bd;
+    border-radius: $br;
+}
+
+@mixin styleForm($tagName){
+    #{$tagName} {
+        outline: none;
+        width: 100%;
+        height: 3.7em;
+        @include styleText($font-secondary,$color-dark-2,0.8em,$fw1);
+        transition: all 500ms ease;
+        border:1px solid rgba(0,0,0,.1);
+        border-radius: 50px;
+    }
+    #{$tagName}:focus{
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        border:1px solid rgba(0,0,0,.3);
+    }
+}
+
+@mixin iconToggle($top){
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    padding: 0;
+    margin: 14px 0;
+    background-color: $color-dark-1;
+    left: 0;
+    top: $top;
+}

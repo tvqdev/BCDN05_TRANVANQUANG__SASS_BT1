@@ -1,0 +1,112 @@
+.header {
+    font-size: $fs-menu;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.5s;
+    &__logo {
+        margin-right: auto;
+        padding: 0;
+        img {
+            width: 80px;
+        }
+    }
+    &__menu {
+        .nav-item .nav-link {
+            @include styleText($font-primary, $color-dark-2, $fs-menu, $fw3);
+            margin: 0 50px 0 0;
+            padding: 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                bottom: -30px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $color-purple;
+                transform: scale(0);
+                transition: all 0.3s ease;
+            }
+        }
+        .nav-item:hover {
+            .nav-link {
+                color: $color-purple;
+            }
+            .nav-link::before {
+                transform: scale(1.5);
+            }
+        }
+    }
+    &__phone {
+        font-size: 0.9rem;
+        padding-right: 6px;
+        .dripicons-phone {
+            padding-right: 0.5em;
+        }
+    }
+    &__social {
+        font-size: 0.9em;
+        i {
+            font-size: 1.1em;
+            padding-left: 9px;
+            color: $color-dark-1;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $color-purple;
+            }
+        }
+    }
+}
+.header-scroll {
+    background-color: $color-white;
+    z-index: 100;
+    animation: headerAnimation 0.5s ease;
+    padding: 6px 0;
+    .header__logo {
+        display: none;
+    }
+    .btn-purple {
+        padding: 0.8em 1.5em;
+    }
+}
+.header-animation {
+    animation: headerAnimation 0.5s ease;
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+  
+    .header {
+        background-color: $color-white;
+        &__logo {
+            img {
+                width: 48px;
+            }
+        }
+    }
+    .header-scroll {
+        padding: 0;
+        &__logo {
+            display: block;
+        }
+    }
+}
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,59 @@
+.btn-purple,
+.btn-white {
+    @include styleBtn($color-purple, 1.1em, 1.5em, 1px solid $color-purple, 50px);
+    @include styleText($font-primary, $color-white, $fs-button-1, $fw2);
+    line-height: 1;
+    box-shadow: 0 0 0 1px #b61984 inset;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border: 1px solid $color-purple;
+    outline: none;
+
+    .btn-content {
+        position: relative;
+        z-index: 3;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 1px solid $color-purple;
+        outline: none;
+        background-color: $color-white;
+        width: 70%;
+        height: 0;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        transition: all 0.2s ease;
+    }
+
+    &:hover {
+        color: $color-purple;
+
+        &::after {
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+    }
+}
+
+.btn-white {
+    background-color: $color-white;
+    color: $color-dark-1;
+    box-shadow: 0 0 0 1px $color-white inset;
+    border-color: $color-white;
+
+    &::after {
+        background-color: $color-purple;
+    }
+
+    &:hover {
+        color: $color-white;
+        border-color: $color-white;
+    }
+}

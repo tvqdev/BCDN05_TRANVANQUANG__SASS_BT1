@@ -1,23 +1,21 @@
 // Helper
 @import "./Helper/variables";
-@import "./Helper/extend";
 @import "./Helper/mixin";
-
-
 // Base
 @import "./Base/reset";
-@import "./Base/customsize";
+@import "./Base/customize";
+// Components
+@import "./Components/button";
+// Layouts
+@import "./Layouts/header";
+@import "./Layouts/about";
+@import "./Layouts/info";
+@import "./Layouts/course";
+@import "./Layouts/footer";
 
-// components
-@import "./components/button";
-@import "./components/link";
+// Pages
 
-// Layout
-@import "./Layout/header";
-@import "./Layout/carousel";
-@import "./Layout/card";
-@import "./Layout/course";
-@import "./Layout/footer";
+// Themes
 
-
+// Vendors
 

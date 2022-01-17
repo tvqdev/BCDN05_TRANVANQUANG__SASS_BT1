@@ -1,0 +1,89 @@
+.footer{
+    background: url(../img/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8em 0;
+    color: $color-white;
+    font-family: $font-secondary;
+    h3{
+        @include styleText($font-primary,$color-white,1.55rem,$fw4);
+        margin-bottom: 2rem;
+    }
+    &-content{
+        margin-bottom: 80px;
+    }
+    &-contact{
+        padding-left: 0;
+        li{
+            margin-bottom: 10px;
+            span:nth-of-type(2){
+                font-size: 0.9em;
+                padding-left: 0.5em;
+            }
+        }
+        &__social{
+            font-size: 0.9em;
+            padding-top: 10px;
+            i{
+                color: $color-white;
+                font-size: 1em;
+                padding-left: 1em;
+                transition: all 0.3s ease;
+            }
+            .fa-twitter{
+                padding-left: 0;
+            }
+            i:hover{
+                color: $color-dark-1;
+            }
+        }
+    }
+    &-link,&-about{
+        ul{
+            li{
+                border-bottom: 1px solid rgba(0,0,0,.1);
+                padding: .8em 0;
+                line-height: 1;
+                &:first-child{
+                    padding-top: 0
+                }
+                a{
+                    @include styleText($font-secondary,$color-white,0.9em,$fw1);
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+    &-news{
+        padding:0 0 0 40px ;
+        input{
+            display: block;
+            width: 100%;
+            border: 1px solid rgba(255,255,255,.1);
+            outline: none;
+            padding: 1em;
+            line-height: 1;
+            border-radius: 50px;
+            height: 3.2em;
+            background-color: #aa017e;
+            color: $color-white;
+            text-align: center;
+            margin: 3em 0 0.5em;
+            transition: all 500ms ease;
+            &::placeholder {
+                color: $color-white;
+              }
+            &:focus{
+                border-color: $color-white;
+            }
+        }
+        button{
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,80 @@
+.course {
+    background: url(../img/accent_bottom_wave_01.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 4em;
+    &-content {
+        margin: 4em auto 0;
+        align-items: center;
+        padding-bottom: 2rem;
+        &__form {
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+            .find-form {
+                margin: 0;
+                padding: 50px 25px 70px;
+                background-color: $color-white-2;
+                border-radius: 10px;
+                box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+                h2 {
+                    @include styleText($font-primary, $color-dark-1, 2.5rem, $fw4);
+                    margin-bottom: 60px;
+                    padding: 0;
+                }
+
+                &__name {
+                    position: relative;
+                    padding: 0 15px 15px 0;
+                    @include styleForm("input");
+                    input {
+                        padding: 1em 1em 1em 3.5em;
+                    }
+                }
+                &__mail {
+                    position: relative;
+                    padding: 0 0 15px 0;
+                    @include styleForm("input");
+                    input {
+                        padding: 1em 1em 1em 3.5em;
+                    }
+                }
+                &__language {
+                    position: relative;
+                    padding: 0 0 15px 0;
+                    @include styleForm("select");
+                    select {
+                        padding: 0 0 0 3em;
+                        &::placeholder {
+                            color: #9da0b6;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+                &__message {
+                    position: relative;
+                    padding: 0 0 15px 0;
+                    @include styleForm("textarea");
+                    textarea {
+                        padding: 1em 1em 1em 3.5em;
+                        border-radius: 20px;
+                        height: 90px;
+                    }
+                }
+                .form-icon {
+                    position: absolute;
+                    top: 1em;
+                    left: 1em;
+                    line-height: 1;
+                    color: $color-purple;
+                }
+                button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
