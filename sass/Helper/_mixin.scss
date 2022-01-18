@@ -27,13 +27,13 @@
     }
 }
 
-@mixin iconToggle($top){
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    padding: 0;
-    margin: 14px 0;
-    background-color: $color-dark-1;
-    left: 0;
-    top: $top;
-}
+// @mixin iconToggle($top){
+//     position: absolute;
+//     width: 24px;
+//     height: 2px;
+//     padding: 0;
+//     margin: 14px 0;
+//     background-color: $color-dark-1;
+//     left: 0;
+//     top: $top;
+// }

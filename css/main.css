@@ -112,7 +112,6 @@ option {
   content: "";
   display: block;
   position: absolute;
-  border: 1px solid #b61984;
   outline: none;
   background-color: #ffffff;
   width: 70%;
@@ -139,14 +138,13 @@ option {
   background-color: #ffffff;
   color: #191919;
   box-shadow: 0 0 0 1px #ffffff inset;
-  border-color: #ffffff;
 }
 .btn-white::after {
   background-color: #b61984;
 }
 .btn-white:hover {
   color: #ffffff;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .header {
@@ -168,7 +166,7 @@ option {
   color: #181818;
   font-size: 13px;
   font-weight: 600;
-  margin: 0 50px 0 0;
+  margin-right: 51px;
   padding: 0;
   position: relative;
   transition: all 0.3s ease;
@@ -218,9 +216,6 @@ option {
   z-index: 100;
   animation: headerAnimation 0.5s ease;
   padding: 6px 0;
-}
-.header-scroll .header__logo {
-  display: none;
 }
 .header-scroll .btn-purple {
   padding: 0.8em 1.5em;
